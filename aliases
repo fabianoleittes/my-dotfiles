@@ -1,0 +1,68 @@
+# Sublime Text 2 Aliases
+export EDITOR="subl -w"
+alias st='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+alias stt='st .'
+
+# Mvim
+export EDITOR="mvim"
+alias v="mvim ."
+
+# Textmate
+export EDITOR="mate -w"
+alias m="mate ."
+
+# Find ruby file
+alias rfind='find . -name "*.rb" | xargs grep -n'
+
+# HomeBrew
+alias brews='brew list -1'
+
+#gitx
+alias g="gitx ."
+
+#open
+alias o="open ."
+
+# system Processes
+alias tu="top -o cpu" # cpu
+alias tm="top -o vsize" # memory
+alias e="exit"
+alias k9="killall -9"
+alias l="ls -lah"
+alias tf="tail -f"
+alias cp="cp -i"
+alias mv="mv -i"
+alias rm="rm -i"
+# Grep
+alias pg="ps aux | grep"
+
+# General #
+alias lserv="open http://localhost:8000 && python -m SimpleHTTPServer"
+
+# Bundle
+alias be="bundle exec"
+alias bi="bundle install"
+alias bl="bundle list"
+alias bp="bundle package"
+alias bu="bundle update"
+alias r="be rspec --no-drb"
+alias dep="be cap deploy"
+
+# Rake
+alias rr="be rake routes"
+alias rrg="be rake routes | grep"
+alias migrate="be rake db:migrate db:test:prepare"
+alias remigrate="be rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare"
+
+
+# Alias Projects
+alias wk="work"
+alias wp="work webpesados"
+
+function work() {
+if [ -d ~/Works/$* ]
+  then cd ~/Works/$*
+else
+  cd ~/Works/archived/$*
+fi
+}
