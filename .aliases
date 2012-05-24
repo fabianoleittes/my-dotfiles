@@ -28,9 +28,6 @@ alias rfind='find . -name "*.rb" | xargs grep -n'
 # HomeBrew
 alias brews='brew list -1'
 
-#gitx
-alias gx="gitx ."
-
 # system Processes
 # List all files colorized in long format
 alias l="ls -Gl"
@@ -65,3 +62,38 @@ alias rr="be rake routes"
 alias rrg="be rake routes | grep"
 alias migrate="be rake db:migrate db:test:prepare"
 alias remigrate="be rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare"
+
+# Git aliases
+alias gx='gitx'
+alias gst='git status -sb'
+alias gad='git add'
+alias gau='git add -u'
+alias gcm='git commit -m'
+alias gca='git commit -am'
+alias gam='git commit --amend'
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias gmr='git merge'
+alias grb='git rebase'
+alias gbr='git branch'
+alias gbt='git branch --track'
+alias gft='git fetch'
+alias gpl='git pull'
+alias gps='git push'
+alias grs='git reset'
+alias grv='git revert'
+alias gsl='git stash list'
+alias gss='git stash save'
+alias gsp='git stash pop'
+alias gsa='git stash apply'
+alias gsw='git stash show'
+alias gbl='git blame'
+alias gdf='git diff'
+alias gdc='git diff --cached'
+alias grm='git rm -r'
+alias gmv='git mv'
+alias gcp='git cherry-pick'
+alias gcl='git clone'
+alias glg='git log --decorate --graph -n 10 --date=relative --pretty="%C(yellow)%h%C(cyan)%d %Creset%s (%an - %ad)"'
+alias gsh='git show'
+alias gsm='git submodule'
