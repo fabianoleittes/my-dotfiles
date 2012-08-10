@@ -1,0 +1,8 @@
+source $HOME/.bash/init.sh
+
+# PATH=$PATH:$HOME/.rvm/bin
+[[ -s "$HOME/.rvm/ scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Prefer US English and use
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US"
