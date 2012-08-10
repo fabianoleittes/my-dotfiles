@@ -1,6 +1,6 @@
 [user]
-	name = fabianoleite
-	email = fabyano.milk@gmail.com
+	name = fabianoleittes
+	email = fabianoleittes@gmail.com
 
 [alias]
   st = status -st
@@ -38,7 +38,7 @@
   untracked = cyan
 
 [github]
-  user = fabianoleite
+  user = fabianoleittes
 
 [core]
 excludesfile = /Users/fabianoleite/.gitignore
