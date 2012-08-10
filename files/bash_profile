@@ -1,3 +1,4 @@
+# Clone http://github.com/fabianoleittes/bash to ~/.bash
 source $HOME/.bash/init.sh
 
 # PATH=$PATH:$HOME/.rvm/bin
